@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"os"
 
 	"github.com/pkg/errors"
@@ -47,6 +48,13 @@ func main() {
 
 	contextLogger.Warn("I'll be logged with common and other field")
 	contextLogger.Info("Me too")
+
+	for n := 0; n <= 5; n++ {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println(n)
+	}
 
 	log.WithFields(log.Fields{
 		"omg":    true,
