@@ -56,6 +56,13 @@ func main() {
 		fmt.Println(n)
 	}
 
+	for n := 0; n <= 10; n++ {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println("test 1", n)
+	}
+
 	log.WithFields(log.Fields{
 		"omg":    true,
 		"number": 100,
