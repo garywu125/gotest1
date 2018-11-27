@@ -23,7 +23,7 @@ Source version Control workflow:
     - git checkout <tag-name> : switch tag release
 
 4. build the local tag release to local specific directory: 
-    - tag checkout <tag-name>    
+    - tag checkout <tag-name>        
     - using vscode differnet shell script to build differnt local tag release:
      - powershell: 
         - batch : PowerShell.exe -Command  "./release.ps1"
@@ -41,3 +41,9 @@ Source version Control workflow:
      - draft a tage release on remote repository
      - upload local tage release build files to draft tag release
      - release the draft tag release on remote repository     
+
+
+MISC:
+   git command: switch back to wherever it was before the last checkout.
+    - git checkout master(branch name) 
+    - git checkout -     (go back to the previous checkout)
