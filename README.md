@@ -13,7 +13,7 @@ Source version Control workflow:
 
 2. Interative commit/push process to keep remote/local repository sync;
 
-3. Tag release for the final commit to mark a milestone and sync update the remote repository:
+3. add Tag release for the final commit to mark a milestone and sync tag update the remote repository:
    
     - git tag -a <tag-name> -m "message" : add new tag
     - git push origin <tag-name>
@@ -23,7 +23,8 @@ Source version Control workflow:
     - git checkout <tag-name> : switch tag release
 
 4. build the local tag release to local specific directory: 
-    vscode differnet shell script to build local tag release:
+    - tag checkout <tag-name>    
+    - using vscode differnet shell script to build differnt local tag release:
      - powershell: 
         - batch : PowerShell.exe -Command  "./release.ps1"
         - step by step process :
