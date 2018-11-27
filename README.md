@@ -37,7 +37,7 @@ Source version Control workflow:
          GOOS=linux GOARCH=amd64 go build -o ../release/test1/v0.1.1/test1_linux_amd64
          GOOS=windows GOARCH=amd64 go build -o ../release/test1/v0.1.1/test1_windows_amd64.exe
 
- 5. 手動 publish tage release to remote repository in github.com
+ 5. 手動 publish local tage release build to be a remote repository release in github.com
      - draft a tage release on remote repository
      - upload local tage release build files to draft tag release
      - release the draft tag release on remote repository     
